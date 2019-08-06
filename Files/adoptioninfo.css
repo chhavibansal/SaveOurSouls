@@ -1,0 +1,61 @@
+.container
+{
+    height: 500px;
+    background: white;
+}
+#table1 tr td
+{
+ padding: 2px; 
+
+}
+#table tr td:first-of-type
+{
+    font-weight: 700;
+}
+.info
+{
+    width: 1000px;
+    padding: 20px;
+    height: 500px;
+    background: white;
+}
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+/* .rightcontainer
+{
+    position: absolute;
+    float: right;
+} */
+.pdf
+{
+    width: 200px;
+    padding: 19px;
+    border-left: 2px solid black;
+    height: 500px;
+    float: right;
+    background: white;
+    background-image:url(http://localhost/imagex/adoptnow.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+   /* position: relative; */
+}
+#b01
+
+{
+    width: 100%;
+    margin-top:20px;
+    background: rgb(228, 220, 101);
+  
+}
+#h01
+{ font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1em;
+    padding-top: 120px;
+}

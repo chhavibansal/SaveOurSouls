@@ -1,0 +1,27 @@
+.box
+{
+    width: 850px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 2px;
+    background: url(http://localhost/imagex/requestdonation1.jpg);
+    overflow: hidden;
+}
+.form-group{
+    /* background: purple; */
+    padding:5px;
+}
+.form-group input[type="text"]
+{
+    height: 30px;
+    width: 700px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group input[type="submit"]
+{
+    height: 30px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}

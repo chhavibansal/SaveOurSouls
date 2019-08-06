@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>asnwer bhar do</title>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <input type="text" name="answer" placeholder="enter answer">
+            <input type="submit" name="submit" value="submit">
+        </form>
+        <?php 
+        session_start();
+    $dbhost="localhost";
+    $dbusername="root";
+    $dbpassword="";
+    $dbname="practicedb";
+    $conn= new mysqli($dbhost,$dbusername,$dbpassword,$dbname);
+    if(!$conn){die();}
+    else
+    {  $qid=$_GET['id'];
+        if(isset($_POST["answer"]))
+        {
+            $answer=$_POST["answer"];
+        }
+        if(isset($_REQUEST["submit"]))
+        {
+            $sql="INSERT INTO reply (answer,qid) VALUE('$answer','$qid')";
+        }
+    }
+
+?>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="dash.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <header>
+            <div class="heading">
+            <h1>Dashboard</h1>
+        </div>
+        </header>
+        <section class="content">
+                <?php 
+                session_start();
+                 $dbhost="localhost";
+                 $dbusername="root";
+                 $dbpassword="";
+                 $dbname="practice";
+                 $conn= new mysqli($dbhost,$dbusername,$dbpassword,$dbname);
+                 if(!$conn)
+                 {
+                     echo " cannot connect"; die();
+                 }
+                 $x=$_SESSION['user'];
+                 $sql="SELECT * from table1 WHERE  (username=$x)";
+                  $res=mysqli_query($conn,$sql);
+               if(mysqli_num_rows($res)>0){
+                  
+                   while($row=mysqli_fetch_assoc($res))
+                   {   ?>
+                 <center>   <table>
+                        <h2>Personal Details</h2>
+                        <tr> <td>USERNAME:</td> <td><?php echo $row["username"];   ?> </td> </tr>
+                        <tr> <td>FULL NAME:</td> <td><?php echo $row["fullname"];   ?> </td> </tr>
+                        <tr> <td>ADDRESS:</td> <td><?php echo $row["address"];   ?> </td> </tr>
+                    </table></center>
+                    <h2>Role</h2>
+                  <?php  
+                       $_SESSION['idkey']=$row["ID"];
+                   }
+                 
+               }else{ echo " 0 results";}
+               $y=$_SESSION['idkey'];
+               $sql1="SELECT * FROM table2 where(person_ID=$y )";
+               $result=mysqli_query($conn,$sql1);
+               if(mysqli_num_rows($result)>0)
+               {
+                   while($row=mysqli_fetch_assoc($result))
+                   {?>
+                  <center>  <table>
+                       <tr><td></td><td  ><?php echo $row["role"] ?></td></tr>
+                       
+                    </table></center>
+                    
+                <?php   }
+               }
+               $sql2="SELECT * FROM table3 where (person_ID=$y)";
+               $fresult=mysqli_query($conn,$sql2);
+               if(mysqli_num_rows($fresult)>0)
+               {?>
+               <h2>Active Area</h2><?php
+                   while($row=mysqli_fetch_assoc($fresult))
+                   {?>
+               <center>     <table>
+                    <th>Region </th>
+                        <tr><td>STATE:</td><td><?php echo $row["state"]; ?></td></tr>
+                        <tr><td>CITY:</td><td><?php echo $row["city"]; ?></td></tr>
+                        <tr><td>PINCODE:</td><td><?php echo $row["pincode"]; ?></td></tr>
+                    </table></center>
+                    <?php
+                   }
+               }
+           
+               $conn->close();
+                ?>
+           
+
+        </section>
+
+    
+</body>
+</html>
+
+aside,footer,header,section,p{
+    display: block;
+}
+aside,header,section,body,footer{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font: inherit;
+}
+
+html{
+    background: gray;
+}
+body{
+   
+    background: url(http://localhost/imagex/bgrddashboard.jpg);
+    padding: 10px;
+    color: white;
+}
+header
+{
+    padding-top: 15px;
+    background: purple;
+    height: 120px;
+    width: 1280px;
+    margin: 0 auto;
+}
+.heading
+{
+    height:80px;
+    margin: 0 auto;
+    width: 640px;
+    padding-top: 20px;
+    background: rgb(247, 54, 247);
+}
+h1{
+    color: black;
+    background: rgb(243, 173, 243);
+    width: 320px;
+    padding: 10px;
+    margin: 0 auto;
+    height: 40px;
+    /* margin-left: 20px; */
+    text-align: center;
+}
+h2{
+    color: black;
+    background: rgb(221, 164, 221);
+    text-align: center;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 40px;
+    padding: 7px;
+}
+.left{
+    float: left;
+    background: white;
+    padding-right: 100px; 
+ 
+}
+.right
+{
+    background: white;
+    float: right;
+}
+table td
+{
+    padding-left:30px; 
+    padding-right: 100px;
+}
+table tr td:first-of-type
+{
+    font-weight: 600;
+    /* font-size: 1.2em; */
+}

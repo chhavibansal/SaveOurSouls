@@ -1,0 +1,32 @@
+
+.form-group
+{
+    width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+    background:url(http://localhost/imagex/aboutus.jpg);
+    overflow: hidden;
+    height: 200px;
+}
+.form-group input[type="text"]
+{
+    font-size: 1.4em;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: none;
+
+}   
+.form-group input[type="submit"]
+{
+    font-size: 1.4em;
+    width: 30%;
+    border: none;
+    padding: 10px;
+    
+}
+.container-form{
+    background: white;
+    width: 1280px;
+    height: 400px;
+}

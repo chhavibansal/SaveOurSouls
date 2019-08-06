@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="volunteer.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="volunteer.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="common.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>SOS </title>
+</head>
+<body>
+
+        <div class="login">
+  
+  <div >
+      <!-- Trigger/Open The Modal -->
+  <button id="myBtn" style="float: right; margin-right: 30px" >LOGIN </button>
+  <div id="myModal" class="modal">
+   <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+   <center>    <h2 style="color: black; ">LOGIN</h2></center> 
+      </div>
+      <div class="modal-body">
+          <form action="loginform.php" method="POST">
+              <table id="modal-table">
+                  <tr><td>USERNAME:</td> <td> <input type="text" name="username" placeholder="Enter Mobile Number" autofocus pattern="^[6-9]\d{9}$"></td> <br></tr> 
+                  <tr><td>PASSWORD:</td><td> <input type="password" name="password" placeholder="Enter password" autofocus></td></tr> 
+                  <tr><td></td> <td><input type="submit" name="submit" value="LOGIN IN"></td></tr> 
+                  <tr> <td></td> <td>  </td> </tr>
+          
+               </table>
+          </form>
+      </div>
+      <div class="modal-footer">
+              <a href="signupform.html">Do not have a account? SignUp</a><br><br>
+          <a href="dash.php">Look up my profile..</a>
+          <br><br>
+           <a href="logout.php" >LogOut</a>
+        </div>
+    </div>
+  
+  </div>
+  </div>
+  </div>
+  <header> 
+      <hgroup>
+          <h1> <a href="frontpage.html">  save our souls</a></h1>
+      
+      <h2>the helpline for animals</h2>
+      </hgroup>
+  </header>
+  <div class="navbar">
+          <a href="aboutus.html">
+                <i class="fa fa-info" style="font-size: 1.2em"></i>  
+            About Us</a>
+          <a href="directory.html">
+                <i class="fa fa-search" style="font-size: 1.2em"></i>  Directory</a>
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-paw" style="font-size: 1.2em"></i>  Adopt 
+        
+            </button>
+            <div class="dropdown-content"> 
+              <a href="rehomemypet.html"><i class="fa fa-handshake-o" style="font-size: 1.2em"></i>Adoption</a>
+              <a href="findaparent.php"><i class="fa fa-group" style="font-size: 1.2em"></i>Find a Parent</a>
+              
+            </div>
+          </div> 
+          <div class="dropdown">
+              <button class="dropbtn"><i class="fa fa-money" style="font-size: 1.2em"></i>  Donate</button>
+              <div class="dropdown-content">
+                    <a href="whydonate.html"><i class="fa fa-question-circle" style="font-size: 1.2em"></i>Why Donate</a>
+                    <a href="askfordonation.html"><i class="fa fa-inr" style="font-size: 1.2em"></i>Ask for donation</a>
+                    <a href="donationrequest.php"><i class="fa fa-heartbeat" style="font-size: 1.2em"></i>All Donation Requests</a>
+                    <a href="donationpage.php"><i class="fa fa-credit-card" style="font-size: 1.2em"></i>Donate</a>
+              </div>
+          </div>
+        </div>
+  <div class="content">
+        <div class="volunteer-content">
+            <div class="banner-image">Volunteer for us </div>
+                <p>Our volunteers are the heart of our organization! We could not offer all the programs and services without our Volunteer Team!  … from dog walking & cat cuddling, helping with our mounds of laundry, making pet therapy visits, showcasing shelter animals off-site or baking cakes & cookies for events… we would be struggling without our wonderful group of volunteers!  Our many volunteer opportunities work well with every schedule and time constraint. Take a look at the volunteer opportunities.</p>
+                <p style="clear: both;" >Join the Helping Paws team and become a Volunteer ‘Rock Star’! Volunteering is a rewarding experience for many and a great way to help our homeless animals and give them a “second chance”. As a mostly volunteer-based organization, Helping Paws is always in need of dedicated volunteers who want to make a difference. If you have a few hours each week or month to contribute your time and talents, then we would love to hear from you. Volunteers do many different kinds of things, including animal care (walking dogs, cleaning cat cages, etc.), assisting during fundraising events, doing data entry, and much more.
+
+                Adult volunteer positions are for those ages 18 and older. Helping Paws is looking for volunteers who are willing to make a weekly or monthly commitment to help support the shelter and the animals. We also accept one-time/short-term groups, students and court-appointed community service volunteers. Please fill out the appropriate volunteer application that best fits your situation.</p>
+      </div>
+      <div class="volunteer-side-content">
+                <div class="boxone">
+                    <h1>Thinking to be a Volunteer?</h1>
+                    <h3> <a href="#hey">Here`s our guide to make you one.</a> </h3>
+                </div>
+       <div class="boxtwo">
+            <h1>Volunteer Jobs</h1>
+            <ul id="p01">
+                <li><a href="#roles">Dog Walking</a></li>
+                <li><a href="#roles">Pet assited Theory</a></li>
+                <li><a href="#roles">Veterinary Clinic Assistant</a></li>
+                <li><a href="#roles">Foster Care Volunteer</a></li>
+                <li><a href="#roles">Handy Helper</a></li>
+                <li><a href="#roles">Meet Up Organizer</a></li>
+            </ul>
+       </div>
+    </div>
+ 
+        <div class="description">
+                <div class="content" id="hey" >
+                        <h3 style="font-family:cursive  ;text-transform: uppercase; font-weight: 800; text-align: center">Here`s our guide to make you a volunteer</h3>
+                        <div class="unwind" onclick="myFunction()"><span style="font-size: 0.9em; padding-left: 10px;" > &#43;</span>  How do I become a volunteer?</div>
+                        <div class="classic"  id="demo" style="display: none;">
+                            <ul>
+                                <li>Volunteer positions are available only to those individuals who are 18 years of age or older</li>
+                                <li>All volunteer need to complete an “application form” and a general interview.</li>
+                                <li>On the basis of our need and the extend of your desire to help we assign you your position. The voluntary program is of minimum 6 weeks. Since this is a people funded organisation we will pass on as many benefits to our volunteers as we can at ease.</li>
+                            </ul>
+                        </div>
+                        
+                    <div class="unwind" onclick="Function1()"><span style="font-size: 0.9em; padding-left: 10px;" > &#43;</span> What is expected of a volunteer?</div>
+                        <div class="classic"  id="demo1" style="display: none;">
+                            <p>The most important attribute of a volunteer is commitment! We understand that people’s schedules may not always be consistent and that hours of availability may fluctuate, however, we need your commitment to selected programs for our relationship to be mutually beneficial.
+                            <br><br> Volunteers participate in a number of different programs on our behalf and each follow varying timelines. However, in the case of our animal care volunteers, we do require a regular visit to the shelter. A weekly visit is ideal. We would also hope that you have applied with a long-term commitment to the animals in mind.
+                            </p>
+                        </div>
+                <div id="roles" class="roles">
+                        <h1 style="font-size: 1.7em; font-family: cursive; font-weight: 600;text-align: center;padding: 10px;">Volunteer Jobs
+                            </h1>
+                            <div class="unwind" onclick="dogwalker()"><span style="font-size: 0.9em; padding-left: 10px;" > &#43;</span> Dog Walker</div>
+                            <div class="classic"  id="dogwalker" style="display: none;">
+                                <img src="imagex/dogwalker.jpg" alt="dogwalker" style="float: left; margin: 1em;">
+                            <p>Dog walkers not only provide exercise, but teach dogs basic obedience commands with the goal of making their stay at the shelter more stimulating. Training also helps the dogs make an easier transition into their new homes.
+                            <br>This position requires a tolerance for loud noise, and morning dog walkers are exposed to various cleaning agents.
+                            <br>Duties include: walking, socializing and comforting the dogs; using learned PAWS' training practices; monitoring behavior and medical needs on daily log; preparing and giving dog treats; assisting the public when they have questions; assisting with laundry and dishes; and scooping poop.</p>
+                            <p><strong>Time commitment:</strong> A weekly shift for three hours for a minimum of three months.</p>
+                        </div>
+                        <div class="unwind" onclick="petassitedtheory()"><span style="font-size: 0.9em; padding-left: 10px;" > &#43;</span> Pet assited Theory</div>
+                        <div class="classic"  id="petassitedtheory" style="display: none;">
+                            <img src="imagex/petassitedtheory.jpg" alt="Pet Assited Theory" style="float: left; margin: 1em;">
+                        <p>Dog walkers not only provide exercise, but teach dogs basic obedience commands with the goal of making their stay at the shelter more stimulating. Training also helps the dogs make an easier transition into their new homes.
+                        <br>The benefits of this bond include: Reduced depression, anxiety stress and reliance on pain medication; a lowered heart rate, blood pressure and stress hormones; a greater sense of well being; and relieving the feeling of social isolation of many persons who, due to either age or infirmity, are restricted to their homes, and have no relatives living nearby.
+                        <br>Duties include: walking, socializing and comforting the dogs; using learned PAWS' training practices; monitoring behavior and medical needs on daily log; preparing and giving dog treats; assisting the public when they have questions; assisting with laundry and dishes; and scooping poop.</p>
+                        <p><strong>Time commitment:</strong> A weekly three-hour shift for a minimum of three months.</p>
+                    </div>
+                    <div class="unwind" onclick="veterinaryclinicassistant()"><span style="font-size: 0.9em; padding-left: 10px;" > &#43;</span> Veterinary Clinic Assistant</div>
+                    <div class="classic"  id="veterinaryclinicassistant" style="display: none;">
+                        <img src="imagex/veterinaryclinicassistant.jpg" alt="Veterinary Clinic Assistant" style="float: left; margin: 1em;">
+                    <p> Veterinary Clinic Assistants help the veterinary staff with daily clinic duties. This position is fast-paced and requires a volunteer who learns quickly. For most of the year, we are caring for as many as 100 animals at a time with various medical needs. Volunteers in this position are necessary for the success of our medical program.
+                    <br>The benefits of this bond include: Reduced depression, anxiety stress and reliance on pain medication; a lowered heart rate, blood pressure and stress hormones; a greater sense of well being; and relieving the feeling of social isolation of many persons who, due to either age or infirmity, are restricted to their homes, and have no relatives living nearby.
+                    <br>Duties include: cleaning and wrapping surgical instruments; cleaning prep and surgery rooms in clinic; assisting with lab work; maintaining cage cleanliness; preparing medicine and subcutaneous fluids; assisting with laundry; sweeping and mopping; and safely handling animals.
+                    <p><strong>Time commitment:</strong> A weekly shift for three hours for a minimum of three months.</p>
+                </div>    
+                <div class="unwind" onclick="fostercarevolunteer()"><span style="font-size: 0.9em; padding-left: 10px;" > &#43;</span> Foster Care Volunteer</div>
+                    <div class="classic"  id="fostercarevolunteer" style="display: none;">
+                        <img src="imagex/fostercarevolunteer1.jpg" alt="Foster Care Volunteer" style="float: left; margin: 1em;">
+                        <img src="imagex/fostercarevolunteer.jpg" alt="Foster Care Volunteer" style="float: right; margin: 1em;">
+                    <p>Dog walkers not only provide exercise, but teach dogs basic obedience commands with the goal of making their stay at the shelter more stimulating. Training also helps the dogs make an easier transition into their new homes.
+                    <br>The benefits of this bond include: Reduced depression, anxiety stress and reliance on pain medication; a lowered heart rate, blood pressure and stress hormones; a greater sense of well being; and relieving the feeling of social isolation of many persons who, due to either age or infirmity, are restricted to their homes, and have no relatives living nearby.
+                    <br>Duties include: walking, socializing and comforting the dogs; using learned PAWS' training practices; monitoring behavior and medical needs on daily log; preparing and giving dog treats; assisting the public when they have questions; assisting with laundry and dishes; and scooping poop.</p>
+                    <p><strong>Time commitment:</strong> A weekly shift for three hours for a minimum of three months.</p>
+                </div>    
+                    
+                </div>        
+                    </div>
+                    
+        </div>   
+       
+</div>
+
+
+
+
+  <footer id="pageFooter">
+    <div style="margin-top: 1.2em" class="down one">
+        <h1>Support Us</h1>
+        <ul>
+                <li><a href="whydonate.html">Donate Now</a></li>
+                <li><a href="volunteer.html">Volunteer for us</a></li>
+        </ul>
+    </div>
+    <div  class="down two">
+        <h1>Adoption</h1>
+       <ul>
+        <li><a href="findaparent.php">Available dogs</a></li>
+        <li><a href="Dog%20Adoption%20Form.pdf">Adoption Process</a></li>
+        <li><a href="faq.php">FAQ</a></li>
+       </ul>
+    </div>
+    <div style="margin-top: 0.5em" class="down three">
+        <h1>Our Location</h1><br>
+           <center> <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=E+11+Green+Park,+Extension,+India&amp;ie=UTF8&amp;hq=&amp;hnear=E+11+Green+park,+Extension,+New,+Delhi+110016&amp;ll=28.5597,77.2039&amp;spn=0.009995,0.023056&amp;t=m&amp;z=14&amp;iwloc=r0&amp;output=embed"></iframe>
+            <p>E-11, Green Park Extension <br>
+                New Delhi-110016 <br>
+                Mobile No-9873179872 <br>
+            </p></center>
+    </div>
+
+</footer>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+    
+</body>
+</html>
+

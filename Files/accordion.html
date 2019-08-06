@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<div class="description">
+<div class="content" id="hey" >
+        <button class="accordion">  How do I become a volunteer?</button>
+        <div class="panel">
+            <ul>
+                <li>Volunteer positions are available only to those individuals who are 18 years of age or older</li>
+                <li>All volunteer need to complete an “application form” and a general interview.</li>
+                <li>On the basis of our need and the extend of your desire to help we assign you your position. The voluntary program is of minimum 6 weeks. Since this is a people funded organisation we will pass on as many benefits to our volunteers as we can at ease.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">What is expected of a volunteer?</button>
+        <div class="panel">
+            <p>The most important attribute of a volunteer is commitment! We understand that people’s schedules may not always be consistent and that hours of availability may fluctuate, however, we need your commitment to selected programs for our relationship to be mutually beneficial.
+                <br><br> Volunteers participate in a number of different programs on our behalf and each follow varying timelines. However, in the case of our animal care volunteers, we do require a regular visit to the shelter. A weekly visit is ideal. We would also hope that you have applied with a long-term commitment to the animals in mind.
+                </p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+                <img src="imagex/dogwalker.jpg" alt="dogwalker" style="float: left; margin: 1em;">
+                <p>Dog walkers not only provide exercise, but teach dogs basic obedience commands with the goal of making their stay at the shelter more stimulating. Training also helps the dogs make an easier transition into their new homes.
+                <br>This position requires a tolerance for loud noise, and morning dog walkers are exposed to various cleaning agents.
+                <br>Duties include: walking, socializing and comforting the dogs; using learned PAWS' training practices; monitoring behavior and medical needs on daily log; preparing and giving dog treats; assisting the public when they have questions; assisting with laundry and dishes; and scooping poop.</p>
+                <p><strong>Time commitment:</strong> A weekly shift for three hours for a minimum of three months.</p>
+        </div>
+        <div id="roles" class="roles">
+            <button class="accordion">Section 3</button>
+                <div class="panel">
+                        <img src="imagex/dogwalker.jpg" alt="dogwalker" style="float: left; margin: 1em;">
+                        <p>Dog walkers not only provide exercise, but teach dogs basic obedience commands with the goal of making their stay at the shelter more stimulating. Training also helps the dogs make an easier transition into their new homes.
+                        <br>This position requires a tolerance for loud noise, and morning dog walkers are exposed to various cleaning agents.
+                        <br>Duties include: walking, socializing and comforting the dogs; using learned PAWS' training practices; monitoring behavior and medical needs on daily log; preparing and giving dog treats; assisting the public when they have questions; assisting with laundry and dishes; and scooping poop.</p>
+                        <p><strong>Time commitment:</strong> A weekly shift for three hours for a minimum of three months.</p>
+                </div>
+            <button class="accordion">Section 3</button>
+                <div class="panel">
+                        <img src="imagex/dogwalker.jpg" alt="dogwalker" style="float: left; margin: 1em;">
+                        <p>Dog walkers not only provide exercise, but teach dogs basic obedience commands with the goal of making their stay at the shelter more stimulating. Training also helps the dogs make an easier transition into their new homes.
+                        <br>This position requires a tolerance for loud noise, and morning dog walkers are exposed to various cleaning agents.
+                        <br>Duties include: walking, socializing and comforting the dogs; using learned PAWS' training practices; monitoring behavior and medical needs on daily log; preparing and giving dog treats; assisting the public when they have questions; assisting with laundry and dishes; and scooping poop.</p>
+                        <p><strong>Time commitment:</strong> A weekly shift for three hours for a minimum of three months.</p>
+                </div>
+            <button class="accordion">Section 3</button>
+                <div class="panel">
+                        <img src="imagex/dogwalker.jpg" alt="dogwalker" style="float: left; margin: 1em;">
+                        <p>Dog walkers not only provide exercise, but teach dogs basic obedience commands with the goal of making their stay at the shelter more stimulating. Training also helps the dogs make an easier transition into their new homes.
+                        <br>This position requires a tolerance for loud noise, and morning dog walkers are exposed to various cleaning agents.
+                        <br>Duties include: walking, socializing and comforting the dogs; using learned PAWS' training practices; monitoring behavior and medical needs on daily log; preparing and giving dog treats; assisting the public when they have questions; assisting with laundry and dishes; and scooping poop.</p>
+                        <p><strong>Time commitment:</strong> A weekly shift for three hours for a minimum of three months.</p>
+                </div>
+            <button class="accordion">Section 3</button>
+                <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>        
+            <button class="accordion">Section 3</button>
+                <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>        
+            
+        </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for(i=0;i<acc.length;i++)
+{
+    acc[i].addEventListener("click",function(){
+        this.classList.toggle("active");
+        var panel=this.nextElementSibling;
+        if(panel.style.maxHeight)
+        {
+            panel.style.maxHeight=null;
+        }
+        else{
+            panel.style.maxHeight=panel.scrollHeight+"px";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

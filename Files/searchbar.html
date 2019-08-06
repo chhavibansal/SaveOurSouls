@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="main.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="searchbar.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="common.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>SOS </title>
+</head>
+<body>
+
+      <div class="login">
+
+<div >
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn" style="float: right; margin-right: 30px; text-align:center " >LOGIN</button>
+<div id="myModal" class="modal">
+ <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 style="text-align: center; color: black">LOGIN</h2>
+    </div>
+    <div class="modal-body">
+        <form action="loginform.php" method="POST">
+            <table>
+                
+                <tr><td>USERNAME:</td> <td> <input type="text" name="username" placeholder="Enter Mobile Number" pattern="^[6-9]\d{9}$"></td> <br></tr> 
+                <tr><td>PASSWORD:</td><td> <input type="password" name="password" placeholder="Enter password"></td></tr> 
+                <tr><td></td> <td><input type="submit" name="submit" value="LOGIN IN"></td></tr> 
+                <tr> <td></td> <td> <a href="signupform.html">Do not have a account? SignUp</a> </td> </tr>
+                <tr> <td></td> <td> <a href="dash.php">Look up my profile..</a> </td> </tr>
+             </table>
+        </form>
+    </div>
+    
+  </div>
+
+</div>
+</div>
+</div>
+<header> 
+    <hgroup>
+    <h1> <a href="frontpage.html">  save our souls</a></h1>
+    
+    <h2>the helpline for animals</h2>
+    </hgroup>
+</header>
+<nav id="mainNav" style="margin-left: 38px;">
+    <ul>
+        <li><a href="aboutus.html" title=" Contact Us" >About Us <em> Contact Us</em></a> </li>
+        <li><a href="directorysearch.html" title=" Directory">Directory <em>Search information</em> </a></li>
+        <li><a href="#" title=" Adoption">Adopt <em>Adoption</em> </a></li>
+        <li><a href="#" title=" Donation">Donate <em>Donation</em> </a></li>
+        <!-- <li><a href="#" title=" Emergency">Emergency <em>Emergency cases</em> </a></li> -->
+    </ul>
+</nav>
+<section class="searcharea">
+<div class="global">
+        <fieldset>
+             <form class="search-form" action="kosis1.php" method="POST">
+                 <div class="form-group icon" >
+                     <i class="fa fa-tag" style="font-size: 25px"></i>
+                     <input type="text" name="pincode" placeholder="Enter The Pin Code" autofocus class="form-control">
+
+                 </div>
+                 <div class="form-group icon"  >
+                     <i class="fa fa-map-marker" style="font-size: 25px"></i>
+                     <input type="text" name="city" placeholder="Enter Place" class="form-control">
+                 </div>
+                 <div class="form-group icon"  >
+                     <i class="fa fa-paw" style="font-size: 25px"></i>
+                     <input type="text" name="role" placeholder="Enter Role" class="form-control">
+                 </div>
+                <button class="btn btn-common" style="float: right">
+                    <i class="fa fa-search"></i>
+                </button>
+             </form>
+         </fieldset>
+</div> 
+   
+    </section>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                width: 1280px;
+                margin: 0 auto;
+            }
+            h1
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.5em;
+                padding-left: 400px;
+                margin-top: 30px;
+            }
+            select{
+                width: 400px;
+                height: 200px;
+            }
+            p{
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+            strong{
+                font-style: italic;
+                font-size: 0.9em;
+            }
+            input[type="submit"]
+            {
+                background: red;
+                border:none;
+                border-radius: 50%; 
+                width: 300px;
+                font-size: 1.7em;
+                line-height: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Enter your  roles</h1>
+        <form action="try.php" method="POST">
+          <p>  ROLES:<strong> *select ctr(windows) or cmd(mac) to select multiple roles*</strong></p>
+                <select name="role[]" multiple="multiple">
+                        <option value="Animal Lover">Animal Lover</option>
+                        <option value="Catcher">Catcher</option>
+                        <option value="Counsellor">Counsellor</option>
+                        <option value="Dispensary">Dispensary</option>
+                        <option value="Dog Shop">Dog Shop</option>
+                        <option value="Dog Training">Dog Training</option>
+                        <option value="Hospital">Hospital</option>
+                        <option value=" Neuter Program"> Neuter Program</option>
+                        <option value="NGO">NGO</option>
+                        <option value="Pet Grooming">Pet Grooming</option>
+                        <option value="Rescuer">Rescuer</option>
+                        <option value="Shelter">Shelter</option>
+                        <option value="Sponsor/Donor">Sponsor/Donor</option>
+                        <option value="Veterinarian">Veterinarian</option>
+                        <option value="Volunteer">Volunteer</option>  
+                </select>
+                <br><br><br>
+                <input type="submit" name="ADD" >
+            </form>    
+    </body>
+</html>
